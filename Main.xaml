@@ -1,0 +1,398 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uuam="clr-namespace:UiPath.UIAutomationNext.Activities.Models;assembly=UiPath.UIAutomationNext.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>System.Numerics</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Private.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1286,3009" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+      <Variable x:TypeArguments="x:String" Name="gen" />
+      <Variable x:TypeArguments="x:Int32" Name="Counter">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:Int32" />
+        </Variable.Default>
+      </Variable>
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Welcome to the Free Music Archive - Free Music Archive" sap:VirtualizedContainerService.HintSize="1156,2986" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="90c0d551-1841-4806-afbb-483bf29d8918" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1122,2746" sap2010:WorkflowViewState.IdRef="Sequence_8">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="1088,271" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Why don't you just type any genre!" Title="What's your Type?">
+              <ui:InputDialog.Result>
+                <OutArgument x:TypeArguments="x:String">[gen]</OutArgument>
+              </ui:InputDialog.Result>
+            </ui:InputDialog>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Genre'" sap:VirtualizedContainerService.HintSize="1088,225" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="90c0d551-1841-4806-afbb-483bf29d8918" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://freemusicarchive.org/home" CVScreenId="de49bc9e-b3e6-4b9f-a7f0-6b0405a995ca" CvElementArea="799, 682, 23, 21" CvTextArea="748, 684, 44, 15" CvTextArgument="Genre" CvType="ArrowButton" DesignTimeRectangle="724, 681, 99, 24" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl id='genresSearch' tag='SPAN' type='' class='hidden lg:inline-flex items-center cursor-pointer border-l-2 border-gray transition-colors duration-75 my-2.5 pl-6 ease-in-out mr-4 hover:text-blue' aaname='                                                 ' check:innerText='Genre' /&gt;" Guid="8776b9b6-2ba0-4d27-8d85-80eeef5aefb5" InformativeScreenshot="0b90ddbbfa7beea3a8de7f219d7f9f07.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Welcome to the Free Music Archive - Free Music Archive' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="de49bc9e-b3e6-4b9f-a7f0-6b0405a995ca" CvElementArea="853, 669, 85, 48" CvTextArea="870, 684, 52, 15" CvTextArgument="Search" CvType="Button" DesignTimeRectangle="855, 671, 82, 44" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='font-medium inline-flex justify-center items-center rounded relative &amp;#xA;    px-4 py-2   &amp;#xA;  inline-flex transition-colors duration-75 pointer &amp;#xA;  text-white bg-blue hover:bg-blue-100 ml-auto' aaname='Search' check:innerText='Search' /&gt;" Guid="7e56e14f-e9ce-4ca0-b6bd-be7f5acf9bd7" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click any Genre" sap:VirtualizedContainerService.HintSize="1088,225" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="90c0d551-1841-4806-afbb-483bf29d8918" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://freemusicarchive.org/home" CVScreenId="599a1795-95c6-470f-b4e3-abbc89112d80" DesignTimeRectangle="783, 767, 154, 32" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="[string.Format(&quot;&lt;webctrl parentid='genresDropdown' tag='SPAN' aaname='                   {0}                 ' /&gt;&quot;, gen)]" Guid="d4653f49-318c-4c96-bec3-1894fe3994be" InformativeScreenshot="1051bbcc4a68f40c8560cdf1c16e01de.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Welcome to the Free Music Archive - Free Music Archive' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Search'" sap:VirtualizedContainerService.HintSize="1088,225" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="90c0d551-1841-4806-afbb-483bf29d8918" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://freemusicarchive.org/home" CVScreenId="53780941-92cf-4b6f-882f-fe567b5764cc" CvElementArea="853, 669, 85, 47" CvTextArea="870, 684, 52, 15" CvTextArgument="Search" CvType="Button" DesignTimeRectangle="871, 681, 50, 24" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='text' parentid='header' parentname='fmasearch' tag='SPAN' type='' aaname='     Search   ' check:innerText='Search' /&gt;" Guid="8bb35591-6743-4093-81d9-cf4b29eafa5d" InformativeScreenshot="28d9e7e36523149f1c2d6171d92ca1ac.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Welcome to the Free Music Archive - Free Music Archive' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="53780941-92cf-4b6f-882f-fe567b5764cc" CvTextArea="338, 684, 98, 15" CvTextArgument="Search music" CvType="Text" DesignTimeRectangle="324, 671, 384, 44" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='searchField' tag='INPUT' type='text' class='w-full lg:w-96 h-auto lg:px-4' placeholder='Search music' aaname='Search music' /&gt;" Guid="9241f7d3-e24d-44d9-818f-556e7defd69e" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NClick>
+            <uix:NForEachUiElement DisplayName="For Each UI Element" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='CurrentElement'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="1088,1738" sap2010:WorkflowViewState.IdRef="NForEachUiElement_3" LimitExtractionTo="Rows" MaximumResults="35" ScopeIdentifier="90c0d551-1841-4806-afbb-483bf29d8918" Version="V4">
+              <uix:NForEachUiElement.Body>
+                <ActivityAction x:TypeArguments="x:Int32">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1024,1448" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="childUI" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:FindChildren Children="[childUI]" DisplayName="Find Children" Filter="&lt;webctrl tag='A' href='javascript:;' uipath-html-title='Download' /&gt;" sap:VirtualizedContainerService.HintSize="990,119" sap2010:WorkflowViewState.IdRef="FindChildren_5" Scope="FIND_DESCENDANTS">
+                      <ui:FindChildren.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" Element="[CurrentElement]" Id="4a0b0ed8-a6c1-4210-ad5f-0ebfd0370082">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:FindChildren.Target>
+                    </ui:FindChildren>
+                    <ui:ForEach x:TypeArguments="ui:UiElement" CurrentIndex="{x:Null}" DisplayName="For Each currentUiElement" sap:VirtualizedContainerService.HintSize="990,1267" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[childUI]">
+                      <ui:ForEach.Body>
+                        <ActivityAction x:TypeArguments="ui:UiElement">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="ui:UiElement" Name="currentUiElement" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="988,1144" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NHover DisplayName="Hover" sap:VirtualizedContainerService.HintSize="954,205" sap2010:WorkflowViewState.IdRef="NHover_1" InUiElement="[currentUiElement]" ScopeIdentifier="90c0d551-1841-4806-afbb-483bf29d8918" Version="V4">
+                              <uix:NHover.VerifyOptions>
+                                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                  <uix:VerifyExecutionOptions.Retry>
+                                    <InArgument x:TypeArguments="x:Boolean" />
+                                  </uix:VerifyExecutionOptions.Retry>
+                                  <uix:VerifyExecutionOptions.Timeout>
+                                    <InArgument x:TypeArguments="x:Double" />
+                                  </uix:VerifyExecutionOptions.Timeout>
+                                </uix:VerifyExecutionOptions>
+                              </uix:NHover.VerifyOptions>
+                            </uix:NHover>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click" sap:VirtualizedContainerService.HintSize="954,205" sap2010:WorkflowViewState.IdRef="NClick_3" InUiElement="[currentUiElement]" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="90c0d551-1841-4806-afbb-483bf29d8918" Version="V4">
+                              <uix:NClick.VerifyOptions>
+                                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                  <uix:VerifyExecutionOptions.Retry>
+                                    <InArgument x:TypeArguments="x:Boolean" />
+                                  </uix:VerifyExecutionOptions.Retry>
+                                  <uix:VerifyExecutionOptions.Timeout>
+                                    <InArgument x:TypeArguments="x:Double" />
+                                  </uix:VerifyExecutionOptions.Timeout>
+                                </uix:VerifyExecutionOptions>
+                              </uix:NClick.VerifyOptions>
+                            </uix:NClick>
+                            <uix:NCheckState DelayBefore="1" DisplayName="Check App State - If download button was clicked" sap:VirtualizedContainerService.HintSize="954,674" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="90c0d551-1841-4806-afbb-483bf29d8918" Version="V4">
+                              <uix:NCheckState.IfExists>
+                                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,394" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Try Tribe of Noise PRO'" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="90c0d551-1841-4806-afbb-483bf29d8918" Version="V4">
+                                    <uix:NClick.Target>
+                                      <uix:TargetAnchorable BrowserURL="https://freemusicarchive.org/search/?search-genre=Country&amp;page=2" CVScreenId="f0aaa025-9d65-4946-a392-82a315d333f8" CvElementArea="1383, 331, 35, 35" CvType="CloseButton" DesignTimeRectangle="1388, 336, 24, 24" DesignTimeScaleFactor="1" ElementType="Icon" FuzzySelectorArgument="&lt;webctrl parentid='downloadOverlayClose' tag='svg' type='' class='' aaname='    ' /&gt;" Guid="08997811-9203-4e49-bb8b-1757994fbcaf" InformativeScreenshot="dc61c7a8b9a04ec819449f78f8ae4508.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Search music on Free Music Archive - Free Music Archive' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                            <uix:Target CVScreenId="f0aaa025-9d65-4946-a392-82a315d333f8" CvElementArea="1007, 537, 200, 48" CvTextArea="1024, 553, 164, 18" CvTextArgument="Try Tribe of Noise PRO" CvType="Button" DesignTimeRectangle="1008, 540, 198, 44" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='          Try Tribe of Noise PRO      ' parentid='downloadOverlay' tag='A' type='' class='font-medium inline-flex justify-center items-center rounded relative &amp;#xA;    px-4 py-2   &amp;#xA;  inline-flex transition-colors duration-75 pointer &amp;#xA;  text-white bg-orange border-2 border-orange rounded hover:bg-orange-100 hover:border-orange-100 hover:text-white mr-auto' check:innerText='Try Tribe of Noise PRO' /&gt;" Guid="3ed15534-066f-4be9-8350-e9a88dfb8214" SearchSteps="FuzzySelector, CV" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                      </uix:TargetAnchorable>
+                                    </uix:NClick.Target>
+                                    <uix:NClick.VerifyOptions>
+                                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                        <uix:VerifyExecutionOptions.Retry>
+                                          <InArgument x:TypeArguments="x:Boolean" />
+                                        </uix:VerifyExecutionOptions.Retry>
+                                        <uix:VerifyExecutionOptions.Timeout>
+                                          <InArgument x:TypeArguments="x:Double" />
+                                        </uix:VerifyExecutionOptions.Timeout>
+                                      </uix:VerifyExecutionOptions>
+                                    </uix:NClick.VerifyOptions>
+                                  </uix:NClick>
+                                  <Assign DisplayName="Assign - count" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="Assign_1">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:Int32">[Counter]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:Int32">[Counter + 1]</InArgument>
+                                    </Assign.Value>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </Assign>
+                                  <ui:LogMessage DisplayName="Log Message - count" sap:VirtualizedContainerService.HintSize="416,50" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[Counter]">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </ui:LogMessage>
+                                </Sequence>
+                              </uix:NCheckState.IfExists>
+                              <uix:NCheckState.IfNotExists>
+                                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,91" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </Sequence>
+                              </uix:NCheckState.IfNotExists>
+                              <uix:NCheckState.Target>
+                                <uix:TargetAnchorable BrowserURL="https://freemusicarchive.org/search/?search-genre=Country&amp;page=2" CVScreenId="f0aaa025-9d65-4946-a392-82a315d333f8" CvElementArea="558, 766, 236, 59" CvTextArea="606, 787, 167, 18" CvTextArgument="I understand and agree" CvType="Button" DesignTimeRectangle="560, 768, 232, 56" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='                                                                      I understand and agree           ' parentid='downloadOverlay' tag='A' type='' class='download font-medium inline-flex justify-center mr-auto items-center ease-in-out py-4 pl-4 pr-5 rounded bg-blue text-white hover:bg-blue-100' check:innerText='I understand and agree' /&gt;" Guid="b010ec8b-44eb-4b7f-9e08-35d465167cec" InformativeScreenshot="768f626019e18324ce4ccb8639217e1f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Search music on Free Music Archive - Free Music Archive' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target CVScreenId="f0aaa025-9d65-4946-a392-82a315d333f8" CvElementArea="1007, 537, 200, 48" CvTextArea="1024, 553, 164, 18" CvTextArgument="Try Tribe of Noise PRO" CvType="Button" DesignTimeRectangle="1008, 540, 198, 44" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='          Try Tribe of Noise PRO      ' parentid='downloadOverlay' tag='A' type='' class='font-medium inline-flex justify-center items-center rounded relative &amp;#xA;    px-4 py-2   &amp;#xA;  inline-flex transition-colors duration-75 pointer &amp;#xA;  text-white bg-orange border-2 border-orange rounded hover:bg-orange-100 hover:border-orange-100 hover:text-white mr-auto' check:innerText='Try Tribe of Noise PRO' /&gt;" Guid="a00c330a-8498-4463-a986-11af3c3510d8" SearchSteps="FuzzySelector, CV" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NCheckState.Target>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </uix:NCheckState>
+                          </Sequence>
+                        </ActivityAction>
+                      </ui:ForEach.Body>
+                    </ui:ForEach>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NForEachUiElement.Body>
+              <uix:NForEachUiElement.NextLink>
+                <uix:TargetAnchorable BrowserURL="https://freemusicarchive.org/search/?quicksearch=&amp;search-genre=Country" CVScreenId="3179e28e-0a80-4895-88c6-cff61d0a8310" CvElementArea="1554, 714, 19, 20" CvType="ArrowButton" DesignTimeRectangle="1552, 712, 24, 24" DesignTimeScaleFactor="1" ElementType="Icon" FullSelectorArgument="&lt;webctrl aaname='    ' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;a&amp;gt;span&amp;gt;svg' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='    ' type='' tag='svg' class='' /&gt;" Guid="38b9bd26-7b6c-47d5-b87e-b1fd4e603a19" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Search music on Free Music Archive - Free Music Archive' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="3179e28e-0a80-4895-88c6-cff61d0a8310" CvTextArea="1504, 715, 20, 15" CvTextArgument="79" CvType="Text" DesignTimeRectangle="1489, 704, 51, 40" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='79' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='79' tag='A' type='' class='' check:innerText='79' /&gt;" Guid="22376ffc-2bb6-4b67-9f56-d814d8fdd764" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NForEachUiElement.NextLink>
+              <uix:NForEachUiElement.Target>
+                <uix:TargetAnchorable BrowserURL="https://freemusicarchive.org/search/?quicksearch=&amp;search-genre=Country" DesignTimeRectangle="336, 457, 1248, 1996" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl class='colset-c' tag='DIV' /&gt;" Guid="0df905ba-9166-47de-8fc8-0aacec3aa97b" InformativeScreenshot="b3d8f8573189290683cf8ea64bc0faf8.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Search music on Free Music Archive - Free Music Archive' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+              </uix:NForEachUiElement.Target>
+              <uix:NForEachUiElement.Variables>
+                <Variable x:TypeArguments="ui:UiElement" Name="CurrentElement" />
+                <Variable x:TypeArguments="x:String" Name="CurrentElement_Label" />
+              </uix:NForEachUiElement.Variables>
+              <uix:NForEachUiElement.VariablesMetadata>
+                <scg:List x:TypeArguments="uuam:VariableMetadata" x:Key="Column0" Capacity="4">
+                  <uuam:VariableMetadata Name="CurrentElement" Type="ui:UiElement" />
+                  <uuam:VariableMetadata Name="CurrentElement_Label" Type="x:String" />
+                </scg:List>
+              </uix:NForEachUiElement.VariablesMetadata>
+            </uix:NForEachUiElement>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1056" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="580a90b2d694cc9aa47de8d4f3b180a5.jpg" Selector="&lt;html app='chrome.exe' title='Welcome to the Free Music Archive - Free Music Archive' /&gt;" Title="Search music on Free Music Archive - Free Music Archive" Url="https://freemusicarchive.org/home" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
